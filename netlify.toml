@@ -1,0 +1,8 @@
+# Netlify settings for anowebstudio.com: a plain static site, no build step.
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/work/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
