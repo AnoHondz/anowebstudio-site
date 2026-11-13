@@ -51,7 +51,7 @@
 
 <main class="wrap">
   <h1>Privacy</h1>
-  <p class="updated">Last updated 13 November 2026</p>
+  <p class="updated">Last updated 13 November 2026 (visit counting added)</p>
   <p class="lead">Short and plain: we only collect what you send us, we use it to reply to you and make your free preview, and we never sell it.</p>
 
   <section>
@@ -69,7 +69,7 @@
       <li>your current website, if you give one</li>
       <li>the plan you're interested in, and your message</li>
     </ul>
-    <p>We don't use tracking cookies or advertising trackers on this site.</p>
+    <p>To see how many people visit, we use Cloudflare Web Analytics. It counts page visits without cookies and without tracking you as an individual. We don't use advertising trackers.</p>
   </section>
 
   <section>
@@ -88,6 +88,7 @@
     <ul>
       <li><b>Netlify</b> hosts this website and receives the form.</li>
       <li><b>Neo</b> provides our email, where your message arrives.</li>
+      <li><b>Cloudflare</b> runs our web address (DNS) and counts visits, without cookies.</li>
       <li><b>Google Fonts</b> and public code libraries load parts of this page, so they can see your device's IP address, as with any website.</li>
     </ul>
   </section>
@@ -115,5 +116,6 @@
   <div class="wrap">© <span id="yr">2026</span> Ano Web Studio · <a href="/">anowebstudio.com</a></div>
 </footer>
 <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+<!-- Cloudflare Web Analytics: cookie-free visit counts --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7a0d41f3a72e436c944c33a8a05d735e"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
