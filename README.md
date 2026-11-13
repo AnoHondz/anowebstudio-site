@@ -1,6 +1,6 @@
 # anowebstudio.com
 
-The website for Ano Web Studio (Richmond, VA). Plain HTML and CSS in `index.html`, demo screenshots in `work/`.
+The website for Ano Web Studio. Plain HTML and CSS in `index.html`, demo screenshots in `work/`.
 
 **Going live:** this repo is linked to Netlify. Every push to `main` is published to https://anowebstudio.com automatically.
 
