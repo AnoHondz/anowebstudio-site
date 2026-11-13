@@ -467,9 +467,12 @@ html.lenis,html.lenis body{height:auto}
           <label>Email<input type="email" name="email" required autocomplete="email" inputmode="email" autocapitalize="off" placeholder="you@email.com"></label>
           <label>Current website (if any)<input name="site" inputmode="url" autocapitalize="off" autocorrect="off" placeholder="yourbusiness.com"></label>
         </div>
-        <label>Which plan interests you?
-          <select name="plan" id="plan"><option>Not sure yet</option><option>Starter</option><option>Business</option><option>Premium</option></select>
-        </label>
+        <div class="row">
+          <label>Phone (optional)<input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="For a quick call"></label>
+          <label>Which plan interests you?
+            <select name="plan" id="plan"><option>Not sure yet</option><option>Starter</option><option>Business</option><option>Premium</option></select>
+          </label>
+        </div>
         <label>What does your business do?<textarea name="msg" rows="3" placeholder="For example: a family bakery. We'd like people to order cakes online."></textarea></label>
         <button class="btn btn-blue" type="submit" id="send">Send and get my free preview</button>
         <p class="small" id="form-note">We reply within one working day. We never share your details. <a href="/privacy" style="color:var(--ice)">Privacy</a></p>
