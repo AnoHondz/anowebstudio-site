@@ -590,7 +590,7 @@ document.getElementById('form').addEventListener('submit', async e => {
     form.hidden = true;
     const t = document.getElementById('thanks'); t.hidden = false; t.focus();
   } catch (err) {
-    const body = `Name: ${f.get('name')}\nBusiness: ${f.get('business')}\nEmail: ${f.get('email')}\nCurrent website: ${f.get('site') || '-'}\nPlan: ${f.get('plan')}\n\n${f.get('msg') || ''}`;
+    const body = `Name: ${f.get('name')}\nBusiness: ${f.get('business')}\nEmail: ${f.get('email')}\nCurrent website: ${f.get('site') || '-'}\nPhone: ${f.get('phone') || '-'}\nPlan: ${f.get('plan')}\n\n${f.get('msg') || ''}`;
     location.href = 'mailto:anotida.h@anowebstudio.com?subject=' + encodeURIComponent('Free preview: ' + f.get('business')) + '&body=' + encodeURIComponent(body);
     btn.disabled = false; btn.textContent = 'Send and get my free preview';
   }
