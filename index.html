@@ -183,6 +183,7 @@ dialog::backdrop{background:rgba(2,4,9,.82);backdrop-filter:blur(6px)}
 .plan li{display:flex;gap:10px;font-size:15.5px;color:var(--ink-2)}
 .plan li::before{content:"";flex:none;width:18px;height:18px;margin-top:3px;border-radius:50%;background:rgba(47,107,255,.15) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%239cc0ff' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/11px no-repeat}
 .extras{margin-top:20px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.extra.growth{grid-column:1/-1;border-color:rgba(47,107,255,.5);background:rgba(47,107,255,.07)}
 .extra{border:1px solid var(--line);border-radius:16px;padding:22px 26px;font-size:15.5px;color:var(--ink-2);background:rgba(255,255,255,.015)}
 .extra b{display:block;color:var(--ink);font-size:17px;font-weight:600;margin-bottom:2px}
 @media(max-width:920px){.plans,.extras{grid-template-columns:minmax(0,1fr)}}
@@ -401,7 +402,7 @@ html.lenis,html.lenis body{height:auto}
     <div class="intro center reveal" style="text-align:center">
       <span class="label">Pricing</span>
       <h2>Clear prices, paid once</h2>
-      <p>Pay half to start and half when your site goes live. No monthly fee unless you choose the care plan.</p>
+      <p>Pay half to start and half when your site goes live. No monthly fee unless you add the care plan or the growth plan.</p>
     </div>
     <div class="plans">
       <div class="plan reveal">
@@ -425,6 +426,7 @@ html.lenis,html.lenis body{height:auto}
       </div>
     </div>
     <div class="extras">
+      <div class="extra growth reveal"><b>Growth plan: $150 a month (optional)</b>Digital marketing done for you. Every month we write and design your Google Business posts and your Instagram and Facebook posts with captions, plus a short report on what's working. Cancel any time.</div>
       <div class="extra reveal"><b>Care plan: $60 a month (optional)</b>We keep your site running, back it up, and make up to an hour of changes each month.</div>
       <div class="extra reveal"><b>Your site is yours</b>You own your web address and your website. If you ever leave, we hand everything over.</div>
     </div>
@@ -439,7 +441,7 @@ html.lenis,html.lenis body{height:auto}
       <details><summary>Is the preview really free?</summary><p>Yes. We design your preview before you pay anything. If you don't want it, you owe nothing.</p></details>
       <details><summary>I already have a website. Can you help?</summary><p>Yes. We'll look at your current site, tell you plainly what's working and what isn't, and show you a better version.</p></details>
       <details><summary>What do I need to give you?</summary><p>Your logo if you have one, some photos, your services and prices, and your hours. If you don't have photos yet, we'll help.</p></details>
-      <details><summary>Are there monthly fees?</summary><p>No. The build is paid once. Hosting a simple site is usually free or a few dollars a month. The $60 care plan is optional.</p></details>
+      <details><summary>Are there monthly fees?</summary><p>No. The build is paid once. Hosting a simple site is usually free or a few dollars a month. The $60 care plan and the $150 growth plan (we do your Google and social media posts every month) are optional.</p></details>
       <details><summary>How long does it take?</summary><p>Your free preview takes a few days. Once you say yes, your site is usually live in 1 to 3 weeks, depending on the plan.</p></details>
     </div>
   </div>
@@ -470,7 +472,7 @@ html.lenis,html.lenis body{height:auto}
         <div class="row">
           <label>Phone (optional)<input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="For a quick call"></label>
           <label>Which plan interests you?
-            <select name="plan" id="plan"><option>Not sure yet</option><option>Starter</option><option>Business</option><option>Premium</option></select>
+            <select name="plan" id="plan"><option>Not sure yet</option><option>Starter</option><option>Business</option><option>Premium</option><option>Growth plan (marketing)</option></select>
           </label>
         </div>
         <label>What does your business do?<textarea name="msg" rows="3" placeholder="For example: a family bakery. We'd like people to order cakes online."></textarea></label>
